@@ -1,12 +1,11 @@
-﻿using System;
+﻿using BookStoreApp.API.Models;
+using System;
 using System.Collections.Generic;
 
 namespace BookStoreApp.API.Data;
 
-public partial class Book
+public partial class Book : BaseDto
 {
-    public int Id { get; set; }
-
     public string Title { get; set; } = null!;
 
     public int? Year { get; set; }
@@ -17,7 +16,7 @@ public partial class Book
 
     public string Image { get; set; } = null!;
 
-    public double? Price { get; set; }
+    public decimal? Price { get; set; }
 
     public int? AuthorId { get; set; }
 

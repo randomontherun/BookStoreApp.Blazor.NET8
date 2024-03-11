@@ -2,10 +2,8 @@
 
 namespace BookStoreApp.API.Models.Author
 {
-    public class AuthorUpdateDto
+    public class AuthorUpdateDto : BaseDto
     {
-        [Required]
-        public int Id { get; set; }
         [Required]
         [StringLength(50)]
         public string FirstName { get; set; }
